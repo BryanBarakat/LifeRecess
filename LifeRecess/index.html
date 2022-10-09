@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Play LifeRecess if you Want to escape your bad life thoughts, and take some steam off; play one of our games and have some fun.">
+    <title>LifeRecess</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="icon" href="star.png">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="home.png" alt="" id="homepage"></li>
+            <li><img src="rock-paper-scissors.png" alt="" id="scissorspage"></li>
+            <li><img src="tic-tac-toe.png" alt="" id="ticpage"></li>
+            <li><img src="gear.png" alt="" id="settingsP"></li>
+        </ul>
+    </nav>
+    <div class="container" id="container1">
+        <div class="web-logo"><img src="star.png">  <span> &nbsp;LifeRecess</span></div>
+        <div class="text"><h1>Bored and need to have some fun ? play some good old classics with your friend now, or even an online bot. The available games at the moment include 'Rock Paper Scissors' and 'Tic Tac Toe'.More games are on there way;But why not enjoy some time off and forget a bit about life and its problems!Yours sincerely, Bryan.</h1></div>
+    </div>
+    <div class="container2" id="container2">
+        <label id="boyed" class='solo' for="check">BOY</label>
+        <label class="switch">
+            <input type="checkbox" id="check">
+            <span class="slider round"></span>
+        </label>
+        <label id="girled" class="multi" for="check">GIRL</label>
+        <div class="rules">
+            <h1>Choose one of the 3 options below to start.</h1>
+            <div class="roundings">
+                <label for="num-rounds">First To</label>
+                <input type="number" id="num-rounds" min="1" max="20"/>
+                <span id="errors"></span>
+            </div>
+        </div>
+        <div class="score-board">
+            <div class="first-score">
+                <input id="score-user" type="number" min="0" readonly value="0">
+            </div>
+            <div class="second-score">
+                <input id="score-bot" type="number" min="0" readonly value="0">
+            </div>
+        </div>
+        <div class="fighting-box" id="fights">
+            <div class="players-hands">
+                <div class="counter"><h1 id="count">3</h1></div>
+                <div class="opac" id="op">
+                    <div class="initial-hands">
+                        <img id="user-hand" src="user-hand.png" alt="">
+                        <img id="bot-hand" src="bot-hand.png" alt="">
+                    </div>
+                    <div class="referee-user" id="user-moves"></div>
+                    <div class="referee-bot"></div>
+                    <div class="referee-user2"></div>
+                    <div class="referee-bot2"></div>
+                    <div class="spot1"><img src="spotlight2.gif" alt=""></div>
+                    <div class="spot2"><img src="spotlight1.png" alt=""></div>
+                    <div class="fan"><img src="fan.gif" alt=""></div>
+                    <div class="rectangle1"><img src="rectangle.png" alt=""></div>
+                    <div class="rectangle2"><img src="rectangle.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <button id="next-round">NEXT ROUND</button>
+        <div class="attack-options">
+            <div class="rock" id="rock-container">
+                <img src="rock-option.png" alt="">
+            </div>
+            <div class="paper" id="paper-container">
+                <img src="paper-option.png" alt="">
+            </div>
+            <div class="scissors" id="scissors-container">
+                <img src="scissors-option.png" alt="">
+            </div>
+        </div>
+        <div class="reset-button" ><img id="resar" src="reset.png" alt=""></div>
+    </div>
+    <section class="switching" id="switching">
+        <label class='soloed' for="checking">X</label>
+        <label class="switch" id="inp-switch">
+            <input type="checkbox" id="checking">
+            <span class="slider round"></span>
+        </label>
+        <label class="multied" for="checking">O</label>
+        <div class="reset-button2"><img onclick="startGame()" id="reset-button2" src="reset.png" alt=""></div>
+        <span id="demo"></span>
+        <div class="nextT"><button onclick="window.open('https:/www.javatpoint.com/mini-max-algorithm-in-ai')" id="next-round2">LOSING?</button></div>
+    </section>
+    <div class="container3" id="container3">
+        <div class="matrix" id="matrixed">
+            <table>
+                <tr>
+                    <td class="cell" id="0"></td>
+                    <td class="cell" id="1"></td>
+                    <td class="cell" id="2"></td>
+                </tr>
+                <tr>
+                    <td class="cell" id="3"></td>
+                    <td class="cell" id="4"></td>
+                    <td class="cell" id="5"></td>
+                </tr>
+                <tr>
+                    <td class="cell" id="6"></td>
+                    <td class="cell" id="7"></td>
+                    <td class="cell" id="8"></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="endgame" id="remove-endgame">
+        <div class="text"></div>
+    </div>
+    <div class="container4" id="container4">
+        <h1 id="settingsBorder">Settings</h1>
+        <div class="option-settings">
+            <div class="color-theme">
+                <h3>Color Theme</h3>
+                <div class="griddings">
+                    <div class="theme-1">
+                        <label for="rad1">Dark Theme</label>
+                        <input type="radio" id="rad1" name="theming">
+                    </div>
+                    <div class="theme2">
+                        <label for="rad2">Light Theme</label>
+                        <input type="radio" id="rad2" name="theming">
+                    </div>
+                    <div class="theme3">
+                        <label for="rad3">Colorful Theme</label>
+                        <input type="radio" id="rad3" name="theming">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
